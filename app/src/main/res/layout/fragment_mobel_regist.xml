@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunny.mvppandatv.view.Personal.MobelRegistFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/sjzc_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="海外用户暂不支持手机号注册，您可以使用邮箱注册"
+            android:textColor="#286EB9"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/num_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text"
+            android:hint="账号：请输入手机账号" />
+
+        <TextView
+            android:id="@+id/num_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+
+            android:textColor="#ff5959"
+            android:textSize="12sp"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="11"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/img_yzm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text"
+                android:hint="请输入图片验证码" />
+
+            <ImageView
+                android:id="@+id/img_yzm_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="3"
+                android:src="@mipmap/def_no_play" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/img_yzm_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+
+            android:textColor="#ff5959"
+            android:textSize="12sp"
+
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="11"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_yzm"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="7"
+                android:background="@drawable/edit_text"
+                android:hint="请输入收到的验证码" />
+
+            <Button
+                android:id="@+id/edit_yzm_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="3"
+
+                android:background="@drawable/user_landing_btn"
+                android:text="获取验证码"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_yzm_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+
+            android:textColor="#ff5959"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_pws"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hint="请输入密码" />
+
+        <TextView
+            android:id="@+id/edit_pws_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+
+            android:textColor="#ff5959"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="30px" >
+
+        <CheckBox
+            android:id="@+id/mobel_xieyi_check"
+            android:layout_width="74px"
+            android:layout_height="74px"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_check"
+            android:button="@null"
+             />
+        <TextView
+            android:id="@+id/personal_reg_xieyi_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/mobel_xieyi_check"
+            android:text="@string/regist_protorcal"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/hint_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_alignLeft="@id/mobel_xieyi_check"
+            android:layout_below="@id/mobel_xieyi_check"
+            android:textColor="#f00" />
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/mobel_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="30px"
+        android:background="@mipmap/pe_login_view_bg"
+        android:gravity="center"
+        android:padding="30px"
+        android:text="注册"
+        android:textColor="@color/white" />
+</LinearLayout>

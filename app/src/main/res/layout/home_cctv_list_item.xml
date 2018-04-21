@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingLeft="25dp"
+        android:layout_width="200dp"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:id="@+id/mHomeCctvImage"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/lpanda_bottom_gra"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/image"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image1"
+            android:src="@mipmap/play"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:id="@+id/mHomeCCtvTitle"/>
+</LinearLayout>
